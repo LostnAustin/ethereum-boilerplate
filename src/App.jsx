@@ -81,9 +81,6 @@ const App = ({ isServerInfo }) => {
             }}
             defaultSelectedKeys={["quickstart"]}
           >
-            <Menu.Item key="quickstart">
-              <NavLink to="/quickstart">🚀 Quick Start</NavLink>
-            </Menu.Item>
             <Menu.Item key="wallet">
               <NavLink to="/wallet">👛 Wallet</NavLink>
             </Menu.Item>
@@ -120,8 +117,8 @@ const App = ({ isServerInfo }) => {
         </Header>
         <div style={styles.content}>
           <Switch>
-            <Route path="/quickstart">
-              <QuickStart isServerInfo={isServerInfo} />
+            <Route path="/nftBalance">
+             
             </Route>
             <Route path="/wallet">
               <Wallet />
